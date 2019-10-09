@@ -127,10 +127,38 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html,
 body {
   height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.container {
+  width: 80%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 3% 0 3%;
+}
+h2 {
+  font-size: 1.8rem;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
 }

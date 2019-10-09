@@ -49,11 +49,52 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
 }
+
+html {
+	// font-size: 62.5%;
+}
+
+.flex(){
+	display: flex;
+	justify-content: space-between;
+}
+
+@title: 1.8rem;
+@width: 80%;
 
 html, body {
 	height: 100%;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
+.container {
+	width: @width;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	padding: 3% 0 3%;
+}
+h2 {
+	font-size: @title;
+}
+
+header div {
+	.flex();
+	
+
+}
+
+
+
 
