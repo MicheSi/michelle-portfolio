@@ -163,20 +163,23 @@ header {
 
 img {
 	width: 40%;
-	margin-left: 20%;
+	margin-left: 25%;
 	@media (max-width: 500px) {
 		width: 80%;
-		margin: 0 auto;
+		margin: 0 10%;
 	}
 }
 
 
 .me {
 	text-align: center;
-	margin-right: 10%;
+	margin-right: 15%;
+	@media (max-width: 500px) {
+		margin: 0 10%;
+	}
 }
 
-.top {
+#top {
 	.margin();
 	.flex();
 	h2 {
@@ -194,7 +197,7 @@ img {
 	}
 }
 
-.middle {
+#middle {
 	.margin();
 	.flex();
 	h2 {
@@ -212,7 +215,7 @@ img {
 	}
 }
 
-.bottom {
+#bottom {
 	display: flex;
 	justify-content: center;
 	background-color: @purple;

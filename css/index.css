@@ -208,68 +208,73 @@ header div {
 }
 img {
   width: 40%;
-  margin-left: 20%;
+  margin-left: 25%;
 }
 @media (max-width: 500px) {
   img {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 10%;
   }
 }
 .me {
   text-align: center;
-  margin-right: 10%;
+  margin-right: 15%;
 }
-.top {
+@media (max-width: 500px) {
+  .me {
+    margin: 0 10%;
+  }
+}
+#top {
   margin-top: 5%;
   margin-bottom: 5%;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .top h2 {
+  #top h2 {
     font-size: 2.4rem;
   }
 }
-.top .contact {
+#top .contact {
   width: 40%;
   background-color: lightgray;
   padding: 1% 2% 1%;
 }
-.top .aboutMe {
+#top .aboutMe {
   width: 60%;
   background-color: lightblue;
   padding: 1% 2% 1%;
 }
-.middle {
+#middle {
   margin-top: 5%;
   margin-bottom: 5%;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .middle h2 {
+  #middle h2 {
     font-size: 2.4rem;
   }
 }
-.middle .education {
+#middle .education {
   width: 40%;
   background-color: lightgray;
   padding: 1% 2% 1%;
 }
-.middle .skills {
+#middle .skills {
   width: 60%;
   background-color: lightblue;
   padding: 1% 2% 1%;
 }
-.bottom {
+#bottom {
   display: flex;
   justify-content: center;
   background-color: mediumpurple;
   padding: 1% 0 3%;
 }
 @media (max-width: 500px) {
-  .bottom {
+  #bottom {
     padding: 4%;
   }
 }
