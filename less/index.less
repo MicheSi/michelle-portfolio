@@ -51,49 +51,159 @@ table {
 /* Set every element's box-sizing to border-box */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 
-* {
-	box-sizing: border-box;
-	max-width: 100%;
-}
+// Variables
 
-html {
-	// font-size: 62.5%;
-}
+@title: 3.2rem;
+@body: 2.2rem;
+@width: 80%;
+@blue: lightblue;
+@gray: lightgray;
+
+// Mixins
 
 .flex(){
 	display: flex;
 	justify-content: space-between;
 }
 
-@title: 1.8rem;
-@width: 80%;
+.margin(){
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.sideColumn(){
+	width: 40%;
+	background-color: lightgray;
+}
+
+.main(){
+	width: 60%;
+	background-color: lightblue;
+}
+
+// Begin code
+
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+html {
+	font-size: 62.5%;
+}
 
 html, body {
 	height: 100%;
 	font-family: 'Open Sans Condensed', sans-serif;
+	
 }
 .container {
 	width: @width;
+	margin: 0 auto;
+	
+}
+
+body {
+	font-size: @body;
+	line-height: 1.5;
+	
 }
 
 nav {
 	display: flex;
 	justify-content: space-around;
+	background-color: @blue;
+	a {
+		text-decoration: none;
+		color: black;
+		padding: 3% 0 3%;
+		font-size: 1.6rem;
+	}
 }
-nav a {
-	text-decoration: none;
-	color: black;
-	padding: 3% 0 3%;
-}
+
 h2 {
 	font-size: @title;
 }
 
-header div {
+header {
 	.flex();
-	
+	margin-top: 2%;
 
+	h1 {
+		font-size: 4.8rem;
+	} // end header h1
+	p {
+		font-size: @title;
+	} // end header p
+	div {
+		width: 50%;
+	} // end header div
+	img {
+		width: 40%;
+		margin-left: 20%;
+	} //end header img
 }
+
+.me {
+	text-align: center;
+	margin-right: 10%;
+}
+
+.top {
+	.margin();
+	.flex();
+	.contact {
+		.sideColumn();
+	}
+	.aboutMe {
+		.main();
+	}
+}
+
+.middle {
+	.margin();
+	.flex();
+	.education {
+		.sideColumn();
+	}
+	.skills {
+		.main();
+	}
+}
+
+.bottom {
+	display: flex;
+	justify-content: center;
+	background-color: @gray;
+	padding: 1% 0 3%;
+}
+
+.work h2 {
+	text-align: center;
+}
+
+table {
+	border-spacing: 2rem;
+}
+table, th, td {
+	border: 1px solid black;
+}
+
+th, td {
+	padding: 1% 3% 1%;
+}
+
+footer p {
+	text-align: center;
+	margin: 5% 0;
+	font-size: 1.6rem;
+}
+
+
+
+
+
+
 
 
 
