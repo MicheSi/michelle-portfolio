@@ -58,6 +58,7 @@ table {
 @width: 80%;
 @blue: lightblue;
 @gray: lightgray;
+@purple: mediumpurple;
 
 // Mixins
 
@@ -79,6 +80,10 @@ table {
 .main(){
 	width: 60%;
 	background-color: lightblue;
+}
+
+.padding(){
+	padding: 1% 2% 1%;
 }
 
 // Begin code
@@ -106,6 +111,9 @@ html, body {
 body {
 	font-size: @body;
 	line-height: 1.5;
+	@media (max-width: 500px) {
+		font-size: 1.8rem;
+	}
 	
 }
 
@@ -127,22 +135,41 @@ h2 {
 
 header {
 	.flex();
+	background-color: @purple;
 	margin-top: 2%;
+	padding: 2% 0 2%;
 
+	@media (max-width: 500px) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	} // end header media query
 	h1 {
 		font-size: 4.8rem;
+		@media (max-width: 500px){
+			font-size: 3.6rem;
+		}
 	} // end header h1
 	p {
 		font-size: @title;
+		@media (max-width: 500px){
+			font-size: 2.6rem;
+		}
 	} // end header p
 	div {
 		width: 50%;
 	} // end header div
-	img {
-		width: 40%;
-		margin-left: 20%;
-	} //end header img
 }
+
+img {
+	width: 40%;
+	margin-left: 20%;
+	@media (max-width: 500px) {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
 
 .me {
 	text-align: center;
@@ -152,34 +179,54 @@ header {
 .top {
 	.margin();
 	.flex();
+	h2 {
+		@media (max-width: 500px) {
+			font-size: 2.4rem;
+		}
+	}
 	.contact {
 		.sideColumn();
+		.padding();
 	}
 	.aboutMe {
 		.main();
+		.padding();
 	}
 }
 
 .middle {
 	.margin();
 	.flex();
+	h2 {
+		@media (max-width: 500px) {
+			font-size: 2.4rem;
+		}
+	}
 	.education {
 		.sideColumn();
+		.padding();
 	}
 	.skills {
 		.main();
+		.padding();
 	}
 }
 
 .bottom {
 	display: flex;
 	justify-content: center;
-	background-color: @gray;
+	background-color: @purple;
 	padding: 1% 0 3%;
+	@media (max-width: 500px) {
+		padding: 4%;
+	}
 }
 
 .work h2 {
 	text-align: center;
+	@media (max-width: 500px) {
+		font-size: 2.4rem;
+	}
 }
 
 table {
@@ -187,6 +234,9 @@ table {
 }
 table, th, td {
 	border: 1px solid black;
+	@media (max-width: 500px) {
+		font-size: 1.8rem;
+	}
 }
 
 th, td {

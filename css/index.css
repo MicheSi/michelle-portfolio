@@ -154,6 +154,11 @@ body {
   font-size: 2.2rem;
   line-height: 1.5;
 }
+@media (max-width: 500px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -171,20 +176,45 @@ h2 {
 header {
   display: flex;
   justify-content: space-between;
+  background-color: mediumpurple;
   margin-top: 2%;
+  padding: 2% 0 2%;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 header h1 {
   font-size: 4.8rem;
 }
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 3.6rem;
+  }
+}
 header p {
   font-size: 3.2rem;
+}
+@media (max-width: 500px) {
+  header p {
+    font-size: 2.6rem;
+  }
 }
 header div {
   width: 50%;
 }
-header img {
+img {
   width: 40%;
   margin-left: 20%;
+}
+@media (max-width: 500px) {
+  img {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .me {
   text-align: center;
@@ -196,13 +226,20 @@ header img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .top h2 {
+    font-size: 2.4rem;
+  }
+}
 .top .contact {
   width: 40%;
   background-color: lightgray;
+  padding: 1% 2% 1%;
 }
 .top .aboutMe {
   width: 60%;
   background-color: lightblue;
+  padding: 1% 2% 1%;
 }
 .middle {
   margin-top: 5%;
@@ -210,22 +247,39 @@ header img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .middle h2 {
+    font-size: 2.4rem;
+  }
+}
 .middle .education {
   width: 40%;
   background-color: lightgray;
+  padding: 1% 2% 1%;
 }
 .middle .skills {
   width: 60%;
   background-color: lightblue;
+  padding: 1% 2% 1%;
 }
 .bottom {
   display: flex;
   justify-content: center;
-  background-color: lightgray;
+  background-color: mediumpurple;
   padding: 1% 0 3%;
+}
+@media (max-width: 500px) {
+  .bottom {
+    padding: 4%;
+  }
 }
 .work h2 {
   text-align: center;
+}
+@media (max-width: 500px) {
+  .work h2 {
+    font-size: 2.4rem;
+  }
 }
 table {
   border-spacing: 2rem;
@@ -234,6 +288,13 @@ table,
 th,
 td {
   border: 1px solid black;
+}
+@media (max-width: 500px) {
+  table,
+  th,
+  td {
+    font-size: 1.8rem;
+  }
 }
 th,
 td {
