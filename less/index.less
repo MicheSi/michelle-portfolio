@@ -49,7 +49,7 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright|Open+Sans+Condensed:300&display=swap');
 
 // Variables
 
@@ -128,6 +128,10 @@ html, body {
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: @font;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cormorant Upright', serif;
+}
 .container {
 	width: @width;
 	margin: 0 auto;
@@ -154,7 +158,8 @@ nav {
 		text-decoration: none;
 		color: white;
 		padding: 3% 0 3%;
-		font-size: 1.6rem;
+		font-size: 1.8rem;
+		font-weight: bold;
 
 		&:hover {
 			color: @column;
@@ -276,6 +281,11 @@ img {
 		.padding();
 		padding-top: 2.5%;
 
+		@media (max-width: 500px) {
+			.mediaColumn();
+			padding-top: 2.5%;
+		}
+
 		div {
 			.unskew();
 			margin-bottom: 3%;
@@ -289,6 +299,11 @@ img {
 		.main();
 		.padding();
 		padding-top: 5.5%;
+
+		@media (max-width: 500px) {
+			.mediaMain();
+			padding-top: 6%;
+		}
 
 		h2, ul li {
 			.unskew();
