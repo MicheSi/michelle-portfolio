@@ -128,11 +128,11 @@ table {
 }
 /* Set every element's box-sizing to border-box */
 @font-face {
-  font-family: 'Cormorant Upright';
+  font-family: 'Charm';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Cormorant Upright Regular'), local('CormorantUpright-Regular'), url(https://fonts.gstatic.com/s/cormorantupright/v6/VuJrdM3I2Y35poFONtLdafkUCHw1y1vShDA.ttf) format('truetype');
+  src: local('Charm Regular'), local('Charm-Regular'), url(https://fonts.gstatic.com/s/charm/v4/7cHmv4oii5K0MdYoK-s.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Open Sans Condensed';
@@ -160,7 +160,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cormorant Upright', serif;
+  font-family: 'Charm', cursive;
 }
 .container {
   width: 80%;
@@ -186,7 +186,6 @@ nav a {
   color: white;
   padding: 3% 0 3%;
   font-size: 1.8rem;
-  font-weight: bold;
 }
 nav a:hover {
   color: #45558D;
@@ -254,7 +253,7 @@ img {
 .me {
   text-align: center;
   margin-right: 15%;
-  padding-top: 3%;
+  padding-top: 3.5%;
 }
 @media (max-width: 500px) {
   .me {
@@ -336,6 +335,7 @@ img {
   margin-bottom: 3%;
 }
 #middle .education div h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bold;
 }
 #middle .skills {
@@ -351,8 +351,12 @@ img {
     padding-top: 6%;
   }
 }
+#middle .skills ul {
+  display: flex;
+  justify-content: space-between;
+}
 #middle .skills h2,
-#middle .skills ul li {
+#middle .skills ul i {
   -ms-transform: skewY(4deg);
   -webkit-transform: skewY(4deg);
   transform: skewY(4deg);
