@@ -127,6 +127,10 @@ nav {
 		color: white;
 		padding: 3% 0 3%;
 		font-size: 1.6rem;
+
+		&:hover {
+			color: @column;
+		}
 	}
 }
 
@@ -219,7 +223,7 @@ img {
 #bottom {
 	display: flex;
 	justify-content: center;
-	background-color: @content;
+	background-color: @header;
 	padding: 1% 0 3%;
 	@media (max-width: 500px) {
 		padding: 4%;
@@ -235,16 +239,18 @@ img {
 
 table {
 	border-spacing: 2rem;
+	width: 100%;
+
+	th, td {
+		padding: 1% 3% 1%;
+	}
+
 }
 table, th, td {
-	border: 1px solid black;
+	border: 1px solid white;
 	@media (max-width: 500px) {
 		font-size: 1.8rem;
 	}
-}
-
-th, td {
-	padding: 1% 3% 1%;
 }
 
 footer p {
