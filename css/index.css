@@ -193,6 +193,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 5% 0 5%;
   }
 }
 header h1 {
@@ -214,7 +215,7 @@ header p {
 }
 @media (max-width: 500px) {
   header p {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 }
 header div {
@@ -260,6 +261,12 @@ img {
   background-color: #45558D;
   padding: 2% 3% 2%;
 }
+@media (max-width: 500px) {
+  #top .contact {
+    width: 40%;
+    padding: 2% 4% 3%;
+  }
+}
 #top .contact dl dt {
   font-weight: bold;
 }
@@ -267,6 +274,12 @@ img {
   width: 70%;
   background-color: #3F3E85;
   padding: 2% 3% 2%;
+}
+@media (max-width: 500px) {
+  #top .aboutMe {
+    width: 60%;
+    padding: 2% 4% 5%;
+  }
 }
 #middle {
   margin-top: 5%;

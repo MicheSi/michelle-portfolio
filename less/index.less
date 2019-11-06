@@ -100,6 +100,16 @@ table {
 	transform: skewY(4deg);
 }
 
+.mediaColumn(){
+	width: 40%;
+	padding: 2% 4% 3%;
+}
+
+.mediaMain(){
+	width: 60%;
+	padding: 2% 4% 5%;
+}
+
 // Begin code
 
 // General styles
@@ -169,6 +179,7 @@ header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		padding: 5% 0 5%;
 	} // end header media query
 	h1 {
 		.unskew();
@@ -183,7 +194,7 @@ header {
 		font-size: @title;
 
 		@media (max-width: 500px){
-			font-size: 2.6rem;
+			font-size: 2.4rem;
 		}
 	} // end header p
 	div {
@@ -227,6 +238,10 @@ img {
 		.sideColumn();
 		.padding();
 
+		@media (max-width: 500px) {
+			.mediaColumn();
+		}
+
 		dl dt {
 			font-weight: bold;
 		} // end list section
@@ -234,6 +249,10 @@ img {
 	.aboutMe {
 		.main();
 		.padding();
+
+		@media (max-width: 500px) {
+			.mediaMain();
+		}
 	} // end about me section
 } // end top section
 
