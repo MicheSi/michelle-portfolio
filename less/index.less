@@ -89,6 +89,8 @@ table {
 
 // Begin code
 
+// General styles
+
 * {
 	box-sizing: border-box;
 	max-width: 100%;
@@ -117,6 +119,7 @@ body {
 	}
 	
 }
+// Nav styles
 
 nav {
 	display: flex;
@@ -137,6 +140,8 @@ nav {
 h2 {
 	font-size: @title;
 }
+
+// Header Styles
 
 header {
 	.flex();
@@ -164,25 +169,27 @@ header {
 	div {
 		width: 50%;
 	} // end header div
-}
+} // end header section
 
 img {
 	width: 40%;
 	margin-left: 25%;
+
 	@media (max-width: 500px) {
 		width: 80%;
 		margin: 0 10%;
-	}
-}
-
+	} //end img media query
+} // end img section
 
 .me {
 	text-align: center;
 	margin-right: 15%;
 	@media (max-width: 500px) {
 		margin: 0 10%;
-	}
-}
+	} // end .me media query
+} // end .me section
+
+// Contact & About Me styles
 
 #top {
 	.margin();
@@ -190,21 +197,24 @@ img {
 	h2 {
 		@media (max-width: 500px) {
 			font-size: 2.4rem;
-		}
-	}
+		} // end media query
+	} // end h2 section
 	.contact {
 		.sideColumn();
 		.padding();
 
 		dl dt {
 			font-weight: bold;
-		}
-	}
+		} // end list section
+	} // end contact section
 	.aboutMe {
 		.main();
 		.padding();
-	}
-}
+	} // end about me section
+} // end top section
+
+
+// Education & Skills Styles
 
 #middle {
 	.margin();
@@ -212,8 +222,8 @@ img {
 	h2 {
 		@media (max-width: 500px) {
 			font-size: 2.4rem;
-		}
-	}
+		} // end media section
+	} // end h2 section
 	.education {
 		.sideColumn();
 		.padding();
@@ -223,31 +233,36 @@ img {
 
 			h6 {
 				font-weight: bold;
-			}
-		}
-	}
+			} // end div h6 section
+		} // end div section
+	} // end education section
 	.skills {
 		.main();
 		.padding();
-	}
-}
+	} // end skills section
+} // end middle section
+
+// Work History styles
 
 #bottom {
 	display: flex;
 	justify-content: center;
 	background-color: @header;
 	padding: 1% 0 3%;
+
 	@media (max-width: 500px) {
 		padding: 4%;
-	}
-}
+	} // end bottom media query
 
-.work h2 {
-	text-align: center;
-	@media (max-width: 500px) {
-		font-size: 2.4rem;
-	}
-}
+	.work h2 {
+		text-align: center;
+	
+		@media (max-width: 500px) {
+			font-size: 2.4rem;
+		} // end work h2 media query
+	} // end work h2 section
+} // end bottom section
+
 
 table {
 	border-spacing: 2rem;
@@ -264,6 +279,7 @@ table {
 }
 table, th, td {
 	border: 1px solid white;
+	
 	@media (max-width: 500px) {
 		font-size: 1.8rem;
 	}
