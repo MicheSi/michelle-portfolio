@@ -306,11 +306,21 @@ img {
 		}
 
 		ul {
+			.unskew();
 			display: flex;
 			justify-content: space-between;
+			padding-top: 4%;
+
+			@media (max-width: 500px) {
+				flex-direction: column;
+			}
+
+			i, li {
+				margin-top: 3%;
+			}
 		}
 
-		h2, ul i {
+		h2 {
 			.unskew();
 		}
 
