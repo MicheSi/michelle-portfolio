@@ -180,6 +180,9 @@ h2 {
 header {
   display: flex;
   justify-content: space-between;
+  -ms-transform: skewY(-5deg);
+  -webkit-transform: skewY(-5deg);
+  transform: skewY(-5deg);
   background-color: #3F3E85;
   margin-top: 2%;
   padding: 2% 0 2%;
@@ -192,6 +195,9 @@ header {
   }
 }
 header h1 {
+  -ms-transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
   font-size: 4.8rem;
 }
 @media (max-width: 500px) {
@@ -200,6 +206,9 @@ header h1 {
   }
 }
 header p {
+  -ms-transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
   font-size: 3.2rem;
 }
 @media (max-width: 500px) {
@@ -211,6 +220,10 @@ header div {
   width: 50%;
 }
 img {
+  -ms-transform: skewY(5deg);
+  -webkit-transform: skewY(5deg);
+  transform: skewY(5deg);
+  border-radius: 50%;
   width: 40%;
   margin-left: 25%;
 }

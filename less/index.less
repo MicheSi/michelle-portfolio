@@ -87,6 +87,18 @@ table {
 	padding: 2% 3% 2%;
 }
 
+.skew(){
+	-ms-transform: skewY(-5deg);
+	-webkit-transform: skewY(-5deg);
+	transform: skewY(-5deg);
+}
+
+.unskew(){
+	-ms-transform: skewY(5deg);
+	-webkit-transform: skewY(5deg);
+	transform: skewY(5deg);
+}
+
 // Begin code
 
 // General styles
@@ -145,6 +157,7 @@ h2 {
 
 header {
 	.flex();
+	.skew();
 	background-color: @content;
 	margin-top: 2%;
 	padding: 2% 0 2%;
@@ -155,13 +168,17 @@ header {
 		justify-content: center;
 	} // end header media query
 	h1 {
+		.unskew();
 		font-size: 4.8rem;
+
 		@media (max-width: 500px){
 			font-size: 3.6rem;
 		}
 	} // end header h1
 	p {
+		.unskew();
 		font-size: @title;
+
 		@media (max-width: 500px){
 			font-size: 2.6rem;
 		}
@@ -172,6 +189,8 @@ header {
 } // end header section
 
 img {
+	.unskew();
+	border-radius: 50%;
 	width: 40%;
 	margin-left: 25%;
 
