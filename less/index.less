@@ -56,9 +56,10 @@ table {
 @title: 3.2rem;
 @body: 2.2rem;
 @width: 80%;
-@blue: lightblue;
-@gray: lightgray;
-@purple: mediumpurple;
+@header: #2C3141;
+@column: #4C5C96;
+@content:#3F3E85;
+@font: white;
 
 // Mixins
 
@@ -74,12 +75,12 @@ table {
 
 .sideColumn(){
 	width: 40%;
-	background-color: lightgray;
+	background-color: @column;
 }
 
 .main(){
 	width: 60%;
-	background-color: lightblue;
+	background-color: @content;
 }
 
 .padding(){
@@ -100,7 +101,7 @@ html {
 html, body {
 	height: 100%;
 	font-family: 'Open Sans Condensed', sans-serif;
-	
+	color: @font;
 }
 .container {
 	width: @width;
@@ -120,10 +121,10 @@ body {
 nav {
 	display: flex;
 	justify-content: space-around;
-	background-color: @blue;
+	background-color: @header;
 	a {
 		text-decoration: none;
-		color: black;
+		color: white;
 		padding: 3% 0 3%;
 		font-size: 1.6rem;
 	}
@@ -135,7 +136,7 @@ h2 {
 
 header {
 	.flex();
-	background-color: @purple;
+	background-color: @content;
 	margin-top: 2%;
 	padding: 2% 0 2%;
 
@@ -218,7 +219,7 @@ img {
 #bottom {
 	display: flex;
 	justify-content: center;
-	background-color: @purple;
+	background-color: @content;
 	padding: 1% 0 3%;
 	@media (max-width: 500px) {
 		padding: 4%;

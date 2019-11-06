@@ -145,6 +145,7 @@ html,
 body {
   height: 100%;
   font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
 }
 .container {
   width: 80%;
@@ -162,11 +163,11 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: lightblue;
+  background-color: #2C3141;
 }
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 3% 0 3%;
   font-size: 1.6rem;
 }
@@ -176,7 +177,7 @@ h2 {
 header {
   display: flex;
   justify-content: space-between;
-  background-color: mediumpurple;
+  background-color: #3F3E85;
   margin-top: 2%;
   padding: 2% 0 2%;
 }
@@ -238,12 +239,12 @@ img {
 }
 #top .contact {
   width: 40%;
-  background-color: lightgray;
+  background-color: #4C5C96;
   padding: 1% 2% 1%;
 }
 #top .aboutMe {
   width: 60%;
-  background-color: lightblue;
+  background-color: #3F3E85;
   padding: 1% 2% 1%;
 }
 #middle {
@@ -259,18 +260,18 @@ img {
 }
 #middle .education {
   width: 40%;
-  background-color: lightgray;
+  background-color: #4C5C96;
   padding: 1% 2% 1%;
 }
 #middle .skills {
   width: 60%;
-  background-color: lightblue;
+  background-color: #3F3E85;
   padding: 1% 2% 1%;
 }
 #bottom {
   display: flex;
   justify-content: center;
-  background-color: mediumpurple;
+  background-color: #3F3E85;
   padding: 1% 0 3%;
 }
 @media (max-width: 500px) {
