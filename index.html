@@ -1,40 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <title>Michelle Sirimanivong Resume</title>
+    <title>Michelle Sirimanivong - Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/9a929b7098.js" crossorigin="anonymous"></script>
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="css/index.css" />
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-  <div class="container">
-    <nav>
-      <a href="#">Home</a>
-      <a href="#middle">Skills</a>
-      <a href="#bottom">Work History</a>
-      <a href="#top">Contact</a>
-    </nav>
-
-    <header>
-      <div>
-        <img src="images/profile.jpg" alt="Michelle's headshot">
-      </div>
-      <div class="me">
-        <h1>Michelle Sirimanivong</h1>
-        <p>Web Developer</p>
-      </div>
-    </header>
-
-    <section id="top">
+  <body>
+    <div class="container">
+  <!-- start of nav -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#middle">Skills</a>
+        <a href="#bottom">Work History</a>
+        <a href="#top">Contact</a>
+        <a href="https://michesi.github.io/portfolio-website2/">Portfolio</a>
+      </nav>
+  <!-- end of nav -->
+  <!-- start of header -->
+      <header>
+        <div>
+          <img src="images/profile.jpg" alt="Michelle's headshot" />
+        </div>
+        <div class="me">
+          <h1>Michelle Sirimanivong</h1>
+          <p>Web Developer</p>
+        </div>
+      </header>
+  <!-- end of header -->
+  <!-- start of contact & about me section -->
+      <section id="top">
+        <!-- start of contact column -->
         <div class="contact">
           <h2>Contact</h2>
           <dl>
@@ -44,67 +55,88 @@
             <dd>mlazzell17@gmail.com</dd>
           </dl>
         </div>
+        <!-- end of contact column -->
+        <!-- start of about me column -->
         <div class="aboutMe">
           <h2>About Me</h2>
-          <p>I'm a passionate web developer who loves to create and design. I am exceptionally organized and task orientated. I work well with teams and always maintain a high level of professionalism. With my hard work and drive to succeed, I possess the ability to deliver results and achieve goals as needed.</p>
+          <p>
+            I'm a passionate web developer who loves to create and design.
+            I am exceptionally organized and task orientated. I work well
+            with teams and always maintain a high level of professionalism.
+            With my hard work and drive to succeed, I possess the ability
+            to deliver results and achieve goals as needed.
+          </p>
         </div>
-    </section>
-
-    <section id="middle">
+        <!-- end of about me column -->
+      </section>
+  <!-- end of contact & about me section -->
+  <!-- start of education & skills section -->
+      <section id="middle">
+        <!-- start of education column -->
         <div class="education">
           <h2>Education</h2>
-          <h6>Full Stack Web Development</h6>
-          <p>Lambda School<br>
-          2019-2020</p>
-
-          <h6>General Studies</h6>
-          <p>Waukesha North High School<br>
-          1998-2002</p>
+          <div>
+            <h6>Full Stack Web Development</h6>
+            <p>
+              Lambda School<br />
+              2019-2020
+            </p>
+          </div>
+          <div>
+            <h6>General Studies</h6>
+            <p>
+              Waukesha North High School<br />
+              1998-2002
+            </p>
+          </div>
         </div>
+        <!-- end of education column -->
+        <!-- start od skills column -->
         <div class="skills">
           <h2>Skills</h2>
           <ul class="list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>QuarkXpress</li>
-            <li>Microsoft Office</li>
+            <i class="fab fa-html5"><li>HTML</li></i>
+            <i class="fab fa-css3"><li>CSS</li></i>
+            <i class="fab fa-js-square"><li>JavaScript</li></i>
+            <i class="far fa-object-group"><li>QuarkXpress</li></i>
+            <i class="fab fa-microsoft"><li>Microsoft Office</li></i>
           </ul>
         </div>
-    </section>
-
-    <section id="bottom">
-      <div class="work">
-      <h2>Work History</h2>
-      <table>
-        <tr>
-          <th>Company</th>
-          <th>Title</th>
-          <th>Years Worked</th>
-        </tr>
-        <tr>
-          <td>BBVA Compass</td>
-          <td>Administrative Coodinator</td>
-          <td>July 2010 - May 2020</td>
-        </tr>
-        <tr>
-          <td>Swarovski</td>
-          <td>Sales Associate</td>
-          <td>July 2008 - July 2010</td>
-        </tr>
-        <tr>
-          <td>Swoozie's</td>
-          <td>Custom Printing/Assistant Manager</td>
-          <td>March 2006 - March 2008</td>
-        </tr>
-      </table>
+        <!-- end of skills column -->
+      </section>
+  <!-- end of education & skills section -->
+  <!-- start of work history table -->
+      <section id="bottom">
+        <div class="work">
+          <h2>Work History</h2>
+          <table>
+            <tr>
+              <th class="company">Company</th>
+              <th>Title</th>
+              <th>Years Worked</th>
+            </tr>
+            <tr>
+              <td class="compass">BBVA Compass</td>
+              <td>Administrative Coodinator</td>
+              <td>July 2010 - May 2019</td>
+            </tr>
+            <tr>
+              <td>Swarovski</td>
+              <td>Sales Associate</td>
+              <td>July 2008 - July 2010</td>
+            </tr>
+            <tr>
+              <td>Swoozie's</td>
+              <td>Custom Printing/Assistant Manager</td>
+              <td>March 2006 - March 2008</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+<!-- end of work history table -->
+      <footer>
+        <p>&copy Michelle Sirimanivong 2019</p>
+      </footer>
     </div>
-    </section>
-
-    <footer>
-      <p>Copyright Michelle Sirimanivong 2019</p>
-    </footer>
-  
-</div>
-</body>
+  </body>
 </html>

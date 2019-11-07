@@ -49,16 +49,18 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Charm|Open+Sans+Condensed:300&display=swap');
 
 // Variables
 
 @title: 3.2rem;
 @body: 2.2rem;
 @width: 80%;
-@blue: lightblue;
-@gray: lightgray;
-@purple: mediumpurple;
+@bgcolor: #2D3A69;
+@header: #2C3141;
+@column: #45558D;
+@content:#3F3E85;
+@font: white;
 
 // Mixins
 
@@ -73,20 +75,44 @@ table {
 }
 
 .sideColumn(){
-	width: 40%;
-	background-color: lightgray;
+	width: 30%;
+	background-color: @column;
 }
 
 .main(){
-	width: 60%;
-	background-color: lightblue;
+	width: 70%;
+	background-color: @content;
 }
 
 .padding(){
-	padding: 1% 2% 1%;
+	padding: 2% 3% 2%;
+}
+
+.skew(){
+	-ms-transform: skewY(-4deg);
+	-webkit-transform: skewY(-4deg);
+	transform: skewY(-4deg);
+}
+
+.unskew(){
+	-ms-transform: skewY(4deg);
+	-webkit-transform: skewY(4deg);
+	transform: skewY(4deg);
+}
+
+.mediaColumn(){
+	width: 40%;
+	padding: 2% 4% 3%;
+}
+
+.mediaMain(){
+	width: 60%;
+	padding: 2% 4% 5%;
 }
 
 // Begin code
+
+// General styles
 
 * {
 	box-sizing: border-box;
@@ -100,7 +126,11 @@ html {
 html, body {
 	height: 100%;
 	font-family: 'Open Sans Condensed', sans-serif;
-	
+	color: @font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Charm', cursive;
 }
 .container {
 	width: @width;
@@ -111,21 +141,28 @@ html, body {
 body {
 	font-size: @body;
 	line-height: 1.5;
+	background: @bgcolor;
+
 	@media (max-width: 500px) {
 		font-size: 1.8rem;
 	}
 	
 }
+// Nav styles
 
 nav {
 	display: flex;
 	justify-content: space-around;
-	background-color: @blue;
+	background-color: @header;
 	a {
 		text-decoration: none;
-		color: black;
+		color: white;
 		padding: 3% 0 3%;
-		font-size: 1.6rem;
+		font-size: 1.8rem;
+
+		&:hover {
+			color: @column;
+		}
 	}
 }
 
@@ -133,51 +170,65 @@ h2 {
 	font-size: @title;
 }
 
+// Header Styles
+
 header {
 	.flex();
-	background-color: @purple;
-	margin-top: 2%;
+	.skew();
+	background-color: @content;
+	margin-top: 5%;
 	padding: 2% 0 2%;
 
 	@media (max-width: 500px) {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		padding: 5% 0 5%;
 	} // end header media query
 	h1 {
+		.unskew();
 		font-size: 4.8rem;
+
 		@media (max-width: 500px){
 			font-size: 3.6rem;
 		}
 	} // end header h1
 	p {
+		.unskew();
 		font-size: @title;
+
 		@media (max-width: 500px){
-			font-size: 2.6rem;
+			font-size: 2.4rem;
 		}
 	} // end header p
 	div {
 		width: 50%;
 	} // end header div
-}
+} // end header section
 
 img {
+	.unskew();
+	border-radius: 50%;
 	width: 40%;
 	margin-left: 25%;
+
 	@media (max-width: 500px) {
 		width: 80%;
 		margin: 0 10%;
-	}
-}
-
+	} //end img media query
+} // end img section
 
 .me {
 	text-align: center;
 	margin-right: 15%;
+	padding-top: 3.5%;
+
 	@media (max-width: 500px) {
 		margin: 0 10%;
-	}
-}
+	} // end .me media query
+} // end .me section
+
+// Contact & About Me styles
 
 #top {
 	.margin();
@@ -185,66 +236,137 @@ img {
 	h2 {
 		@media (max-width: 500px) {
 			font-size: 2.4rem;
-		}
-	}
+		} // end media query
+	} // end h2 section
 	.contact {
 		.sideColumn();
 		.padding();
-	}
+
+		@media (max-width: 500px) {
+			.mediaColumn();
+		}
+
+		dl dt {
+			font-weight: bold;
+		} // end list section
+	} // end contact section
 	.aboutMe {
 		.main();
 		.padding();
-	}
-}
+
+		@media (max-width: 500px) {
+			.mediaMain();
+		}
+	} // end about me section
+} // end top section
+
+
+// Education & Skills Styles
 
 #middle {
 	.margin();
 	.flex();
+	.skew();
+	
 	h2 {
+		.unskew();
+
 		@media (max-width: 500px) {
 			font-size: 2.4rem;
-		}
-	}
+		} // end media section
+	} // end h2 section
 	.education {
 		.sideColumn();
 		.padding();
-	}
+		padding-top: 2.5%;
+
+		@media (max-width: 500px) {
+			.mediaColumn();
+			padding-top: 2.5%;
+		}
+
+		div {
+			.unskew();
+			margin-bottom: 3%;
+
+			h6 {
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-weight: bold;
+			} // end div h6 section
+		} // end div section
+	} // end education section
 	.skills {
 		.main();
 		.padding();
-	}
-}
+		padding-top: 5.5%;
+
+		@media (max-width: 500px) {
+			.mediaMain();
+			padding-top: 6%;
+		}
+
+		ul {
+			.unskew();
+			display: flex;
+			justify-content: space-between;
+			padding-top: 4%;
+
+			@media (max-width: 500px) {
+				flex-direction: column;
+			}
+
+			i, li {
+				margin-top: 3%;
+			}
+		}
+
+		h2 {
+			.unskew();
+		}
+
+	} // end skills section
+} // end middle section
+
+// Work History styles
 
 #bottom {
 	display: flex;
 	justify-content: center;
-	background-color: @purple;
+	background-color: @header;
 	padding: 1% 0 3%;
+
 	@media (max-width: 500px) {
 		padding: 4%;
-	}
-}
+	} // end bottom media query
 
-.work h2 {
-	text-align: center;
-	@media (max-width: 500px) {
-		font-size: 2.4rem;
-	}
-}
+	.work h2 {
+		text-align: center;
+	
+		@media (max-width: 500px) {
+			font-size: 2.4rem;
+		} // end work h2 media query
+	} // end work h2 section
+} // end bottom section
+
 
 table {
 	border-spacing: 2rem;
-}
+	width: 100%;
+
+	th, td {
+		padding: 1% 3% 1%;
+		width: 350px;
+	} // end th, td section
+
+} // end table section
+
 table, th, td {
-	border: 1px solid black;
+	border: 1px solid white;
+
 	@media (max-width: 500px) {
 		font-size: 1.8rem;
-	}
-}
-
-th, td {
-	padding: 1% 3% 1%;
-}
+	} // end media section
+} // end table, th, tb section
 
 footer p {
 	text-align: center;
