@@ -285,6 +285,10 @@ img {
 #top .contact dl dt {
   font-weight: bold;
 }
+#top .contact a {
+  color: white;
+  text-decoration: none;
+}
 #top .aboutMe {
   width: 70%;
   background-color: #3F3E85;
@@ -333,6 +337,10 @@ img {
   -webkit-transform: skewY(4deg);
   transform: skewY(4deg);
   margin-bottom: 3%;
+}
+#middle .artifacts div a {
+  color: white;
+  text-decoration: none;
 }
 #middle .artifacts div h6 {
   font-family: 'Open Sans Condensed', sans-serif;
