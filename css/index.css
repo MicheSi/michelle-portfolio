@@ -305,14 +305,6 @@ img {
   margin-bottom: 5%;
   display: flex;
   justify-content: space-between;
-  -ms-transform: skewY(-4deg);
-  -webkit-transform: skewY(-4deg);
-  transform: skewY(-4deg);
-}
-#middle h2 {
-  -ms-transform: skewY(4deg);
-  -webkit-transform: skewY(4deg);
-  transform: skewY(4deg);
 }
 @media (max-width: 500px) {
   #middle h2 {
@@ -333,9 +325,6 @@ img {
   }
 }
 #middle .artifacts div {
-  -ms-transform: skewY(4deg);
-  -webkit-transform: skewY(4deg);
-  transform: skewY(4deg);
   margin-bottom: 3%;
 }
 #middle .artifacts div a {
@@ -350,7 +339,7 @@ img {
   width: 70%;
   background-color: #3F3E85;
   padding: 2% 3% 2%;
-  padding-top: 5.5%;
+  padding-top: 2.5%;
 }
 @media (max-width: 500px) {
   #middle .skills {
@@ -360,12 +349,9 @@ img {
   }
 }
 #middle .skills ul {
-  -ms-transform: skewY(4deg);
-  -webkit-transform: skewY(4deg);
-  transform: skewY(4deg);
   display: flex;
-  justify-content: space-between;
-  padding-top: 4%;
+  justify-content: space-around;
+  padding-top: 2%;
 }
 @media (max-width: 500px) {
   #middle .skills ul {
@@ -375,11 +361,6 @@ img {
 #middle .skills ul i,
 #middle .skills ul li {
   margin-top: 3%;
-}
-#middle .skills h2 {
-  -ms-transform: skewY(4deg);
-  -webkit-transform: skewY(4deg);
-  transform: skewY(4deg);
 }
 #bottom {
   display: flex;
