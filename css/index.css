@@ -271,8 +271,30 @@ img {
     font-size: 2.4rem;
   }
 }
-#top .aboutMe {
+#top .contact {
+  width: 30%;
+  background-color: #45558D;
   padding: 2% 3% 2%;
+}
+@media (max-width: 500px) {
+  #top .contact {
+    width: 40%;
+    padding: 2% 4% 3%;
+  }
+}
+#top .contact dl dt {
+  font-weight: bold;
+}
+#top .aboutMe {
+  width: 70%;
+  background-color: #3F3E85;
+  padding: 2% 3% 2%;
+}
+@media (max-width: 500px) {
+  #top .aboutMe {
+    width: 60%;
+    padding: 2% 4% 5%;
+  }
 }
 #middle {
   margin-top: 5%;
@@ -293,12 +315,39 @@ img {
     font-size: 2.4rem;
   }
 }
+#middle .artifacts {
+  width: 30%;
+  background-color: #45558D;
+  padding: 2% 3% 2%;
+  padding-top: 2.5%;
+}
+@media (max-width: 500px) {
+  #middle .artifacts {
+    width: 40%;
+    padding: 2% 4% 3%;
+    padding-top: 2.5%;
+  }
+}
+#middle .artifacts div {
+  -ms-transform: skewY(4deg);
+  -webkit-transform: skewY(4deg);
+  transform: skewY(4deg);
+  margin-bottom: 3%;
+}
+#middle .artifacts div h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
 #middle .skills {
+  width: 70%;
+  background-color: #3F3E85;
   padding: 2% 3% 2%;
   padding-top: 5.5%;
 }
 @media (max-width: 500px) {
   #middle .skills {
+    width: 60%;
+    padding: 2% 4% 5%;
     padding-top: 6%;
   }
 }

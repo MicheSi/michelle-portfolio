@@ -74,6 +74,16 @@ table {
 	margin-bottom: 5%;
 }
 
+.sideColumn(){
+	width: 30%;
+	background-color: @column;
+}
+
+.main(){
+	width: 70%;
+	background-color: @content;
+}
+
 .padding(){
 	padding: 2% 3% 2%;
 }
@@ -90,6 +100,15 @@ table {
 	transform: skewY(4deg);
 }
 
+.mediaColumn(){
+	width: 40%;
+	padding: 2% 4% 3%;
+}
+
+.mediaMain(){
+	width: 60%;
+	padding: 2% 4% 5%;
+}
 
 // Begin code
 
@@ -209,7 +228,7 @@ img {
 	} // end .me media query
 } // end .me section
 
-// About Me styles
+// Contact & About Me styles
 
 #top {
 	.margin();
@@ -220,11 +239,25 @@ img {
 		} // end media query
 	} // end h2 section
 	
-	.aboutMe {
+	.contact {
+		.sideColumn();
 		.padding();
 
 		@media (max-width: 500px) {
-			
+			.mediaColumn();
+		}
+
+		dl dt {
+			font-weight: bold;
+		} // end list section
+	} // end contact section
+
+	.aboutMe {
+		.main();
+		.padding();
+
+		@media (max-width: 500px) {
+			.mediaMain();
 		}
 	} // end about me section
 } // end top section
@@ -245,11 +278,34 @@ img {
 		} // end media section
 	} // end h2 section
 	
+	.artifacts {
+		.sideColumn();
+		.padding();
+		padding-top: 2.5%;
+
+		@media (max-width: 500px) {
+			.mediaColumn();
+			padding-top: 2.5%;
+		}
+
+		div {
+			.unskew();
+			margin-bottom: 3%;
+
+			h6 {
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-weight: bold;
+			} // end div h6 section
+		} // end div section
+	} // end education section
+
 	.skills {
+		.main();
 		.padding();
 		padding-top: 5.5%;
 
 		@media (max-width: 500px) {
+			.mediaMain();
 			padding-top: 6%;
 		}
 
