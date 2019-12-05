@@ -236,7 +236,7 @@ header p {
 header div {
   width: 50%;
 }
-img {
+.profileImg {
   -ms-transform: skewY(4deg);
   -webkit-transform: skewY(4deg);
   transform: skewY(4deg);
@@ -245,7 +245,7 @@ img {
   margin-left: 25%;
 }
 @media (max-width: 500px) {
-  img {
+  .profileImg {
     width: 80%;
     margin: 0 10%;
   }
