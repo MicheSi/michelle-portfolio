@@ -220,7 +220,7 @@ header h1 {
 }
 @media (max-width: 500px) {
   header h1 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   }
 }
 header p {
@@ -258,7 +258,8 @@ header div {
 }
 @media (max-width: 500px) {
   .me {
-    margin: 0 10%;
+    width: 75%;
+    margin: 0 5%;
   }
 }
 #top {
@@ -392,6 +393,7 @@ header div {
   align-items: center;
   text-align: center;
   margin: 3% 0;
+  border-bottom: 5px dotted white;
 }
 #bottom .projects h2 {
   text-align: center;
@@ -411,6 +413,11 @@ header div {
 }
 #bottom .projects img {
   width: 65%;
+}
+@media (max-width: 500px) {
+  #bottom .projects img {
+    display: none;
+  }
 }
 #bottom .projects h3 {
   font-size: 2.8rem;
