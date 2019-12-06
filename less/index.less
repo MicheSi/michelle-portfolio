@@ -56,11 +56,12 @@ table {
 @title: 3.2rem;
 @body: 2.2rem;
 @width: 80%;
-@bgcolor: #2D3A69;
-@header: #2C3141;
-@column: #45558D;
-@content:#3F3E85;
+@bgcolor: #FAFAFA;
+@me: #3C4264;
+@column: #A6A6AF;
+@content:#8F94B5;
 @font: white;
+@hover: @me;
 
 // Mixins
 
@@ -132,6 +133,8 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Charm', cursive;
 }
+
+
 .container {
 	width: @width;
 	margin: 0 auto;
@@ -146,14 +149,14 @@ body {
 	@media (max-width: 500px) {
 		font-size: 1.8rem;
 	}
-	
 }
 // Nav styles
 
 nav {
 	display: flex;
 	justify-content: space-around;
-	background-color: @header;
+	background-color: @content;
+
 	a {
 		text-decoration: none;
 		color: white;
@@ -161,7 +164,8 @@ nav {
 		font-size: 1.8rem;
 
 		&:hover {
-			color: @column;
+			color: @hover;
+			text-decoration: underline;
 		}
 	}
 }
@@ -175,7 +179,7 @@ h2 {
 header {
 	.flex();
 	.skew();
-	background-color: @content;
+	background-color: @me;
 	margin-top: 5%;
 	padding: 2% 0 2%;
 
@@ -255,6 +259,11 @@ header {
 		a {
 			color: white;
 			text-decoration: none;
+
+			&:hover {
+				color: @hover;
+				text-decoration: underline;
+			}
 		}
 	} // end contact section
 
@@ -300,6 +309,11 @@ header {
 			a {
 				color: white;
 				text-decoration: none;
+
+				&:hover {
+					color: @hover;
+					text-decoration: underline;
+				}
 			}
 
 			h6 {
@@ -336,12 +350,12 @@ header {
 	} // end skills section
 } // end middle section
 
-// Work History styles
+// Portfolio styles
 
 #bottom {
 	display: flex;
 	justify-content: center;
-	background-color: @header;
+	background-color: @column;
 	padding: 1% 0 3%;
 
 	@media (max-width: 500px) {
@@ -369,9 +383,14 @@ header {
 		} // end projects h2 section
 	
 
-		a {
+		.gitLink {
 			color: white;
 			text-decoration: none;
+
+			&:hover {
+				color: @hover;
+				text-decoration: underline;
+			}
 		}
 
 		img {
@@ -399,6 +418,7 @@ footer p {
 	text-align: center;
 	margin: 5% 0;
 	font-size: 1.6rem;
+	color: @hover;
 }
 
 
